@@ -10,14 +10,11 @@ if (Meteor.isClient) {
 
 
     Template.leaderboard.events({
-'click li': function(){
-    console.log("You clicked an li element");
+        'click .player': function(){
+            console.log("You clicked a .player element");
+        }
+    });
 }
-});
-    
-}
-
-
 
 
 PlayersList = new Mongo.Collection('players');
